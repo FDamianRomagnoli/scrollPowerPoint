@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    * {
+    scrollbar-width: 0;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+    body{
+        overflow-y: hidden;
+    }
+
+    /* .scroll_PP-Container::-webkit-scrollbar {
+        width: 0px;
+}
+
+
+.scroll_PP-Container{
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+} */
+
+    .SS-Container{
+        overflow-y: scroll;
+        height: calc( 100vh - 70px );
+        margin: 0 auto;
+    }
+
+    .header{
+        background-color: black;
+        height: 70px;
+    }
+
+    .main1{
+        height: calc( 100vh - 70px );
+        background-color: aqua;
+    }
+    .main2{
+        height: calc( 100vh - 70px );
+        background-color:blueviolet;
+    }
+    .main3{
+        height: calc( 100vh - 70px );
+        background-color:chartreuse;
+    }
+    .main4{
+        height: calc( 100vh - 70px );
+        background-color: gold;
+    }
+    .main5{
+        height: calc( 100vh - 70px );
+        background-color: red;
+    }
+
+</style>
+
+<body>
+
+    <section class="header">Other
+    </section>
+    
+    <main class="SS-Container">
+        <section class="main1 SS-Item"></section>
+        <section class="main2 SS-Item"></section>
+        <section class="main3 SS-Item"></section>
+        <section class="main4 SS-Item"></section>
+        <section class="main5 SS-Item"></section>
+    </main>
+    <div></div>
+
+    <script type="module" src="./lib/scrollPP.js"></script>
+
+</body>
+</html>
