@@ -14,68 +14,64 @@
         box-sizing: border-box;
     }
 
-    * {
-    scrollbar-width: 0;
+body{
+    display: flex;
+    margin-top: 200px;
+    gap: 30px;
 }
 
-/* Works on Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-  width: 0;
-}
-
-    body{
-        overflow-y: hidden;
-    }
-
-    /* .scroll_PP-Container::-webkit-scrollbar {
-        width: 0px;
-}
-
-
-.scroll_PP-Container{
-    -ms-overflow-style: none; 
-    scrollbar-width: none; 
-} */
 
     .SS-Container{
         overflow-y: scroll;
-        height: calc( 100vh - 70px );
+        height: 500px;
+        width: 300px;
         margin: 0 auto;
     }
 
-    .header{
-        background-color: black;
-        height: 70px;
-    }
 
     .main1{
-        height: calc( 100vh - 70px );
+        height: 500px;
         background-color: aqua;
     }
     .main2{
-        height: calc( 100vh - 70px );
+        height: 500px;
         background-color:blueviolet;
     }
     .main3{
-        height: calc( 100vh - 70px );
+        height: 500px;
         background-color:chartreuse;
     }
     .main4{
-        height: calc( 100vh - 70px );
+        height: 500px;
         background-color: gold;
     }
     .main5{
-        height: calc( 100vh - 70px );
+        height: 500px;
         background-color: red;
+    }
+
+    .mainb1{
+        height: 300px;
+        background-color: aqua;
+    }
+    .mainb2{
+        height: 300px;
+        background-color:blueviolet;
+    }
+    .mainb3{
+        height: 300px;
+        background-color:chartreuse;
+    }
+
+    .Container2{
+        height: 300px;
+        width: 600px;
     }
 
 </style>
 
 <body>
 
-    <section class="header">Other
-    </section>
-    
     <main class="SS-Container">
         <section class="main1 SS-Item"></section>
         <section class="main2 SS-Item"></section>
@@ -83,7 +79,12 @@
         <section class="main4 SS-Item"></section>
         <section class="main5 SS-Item"></section>
     </main>
-    <div></div>
+
+    <main class="SS-Container Container2">
+        <section class="mainb1 SS-Item"></section>
+        <section class="mainb2 SS-Item"></section>
+        <section class="mainb3 SS-Item"></section>
+    </main>
 
     <script type="module" src="./lib/scrollPP.js"></script>
 
